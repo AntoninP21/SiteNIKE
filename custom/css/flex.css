@@ -8,6 +8,9 @@
         flex-direction: column-reverse;
         
     }
+    .header_icons :hover{
+      fill: gray;
+  }
     .couleur-logo {
         fill: var(--main-color-2);
     }
@@ -39,6 +42,7 @@
     nav .actual{ 
         background-color: var(--main-color-2); 
         color: black;
+        border-radius: 10px; 
     }
     .header_icons {
         justify-content: space-evenly;
@@ -112,6 +116,27 @@
         align-items: center;
        
       }
+      nav a:hover { 
+        background-color: white; 
+          color: black;
+        border-radius: 10px;
+        transition: .4s;
+      }
+      /* Hide Dropdowns by Default */
+  nav ul ul {
+	  display: none;
+	  position: relative; 
+	  right: 140px;
+    top: 0px;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+	  width:170px;
+	  float:none;
+	  display:flex;
+	  position:relative;
+	  right: 170px;
+  }
 }
 @media screen and (max-width:700px) {
     .achats {
