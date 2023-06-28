@@ -1,0 +1,139 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+@media screen and (max-width:1300px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .couleur-logo {
+        fill: var(--main-color-2);
+    }
+    header .header_menu{
+        align-items: start;
+    }
+    .header_menu {
+        justify-content: start;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li:hover > ul {
+        display:inherit;
+    }
+    nav ul ul li {
+        width:170px;
+        float:none;
+        display:list-item;
+        position: relative;
+        left: 170px;
+    }
+    nav {
+        width: 100%;
+    }
+    nav .actual{ 
+        background-color: var(--main-color-2); 
+        color: black;
+    }
+    .header_icons {
+        justify-content: space-evenly;
+        background-color: var(--main-color-2);
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .size-icon {
+        color: var(--main-color-1);
+    }
+    .wall {
+        display: none;
+    }
+    .achats {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap; 
+        background-color: white;
+      }
+      .chaussure {
+        display: flex;
+        width: calc(100%/2);
+
+        
+      }
+      .chaussure img {
+        width: 100%;
+        filter: grayscale();
+        scale: 0.8;
+      
+      }
+      .achats img:hover {
+        filter: none;
+        scale: 1 ;
+        transition: .6s
+      }
+    .header_logonike{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .footer_logo {
+        background-color: var(--main-color-2);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 9rem;
+      }
+      .footer_logo img {
+        scale: .7
+      }
+      .slogan {
+        background-color: var(--main-color-1);
+        width: 100%;
+        display: flex;
+
+      }
+      .slogan p {
+        display: flex;
+        margin: 0px;
+        color: var(--main-color-2);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        scale: 1.4;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
+       
+      }
+}
+@media screen and (max-width:700px) {
+    .achats {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap; 
+        background-color: white;
+      }
+      .chaussure {
+        display: flex;
+        width: 100%;
+        
+      }
+      .chaussure img {
+        width: 100%;
+        filter: grayscale();
+        scale: 0.8;
+      
+      }
+      .achats img:hover {
+        filter: none;
+        scale: 1 ;
+        transition: .6s
+      }
+}
