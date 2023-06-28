@@ -1,0 +1,95 @@
+:root {
+    --main-color-1: black;
+    --main-color-2: yellow;
+    --main-color-3: white;
+    --main-color-4: gray;
+
+  }
+ 
+
+.couleur-logo {
+    fill: var(--main-color-3);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
+.header_menu {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.header_logonike {
+  display: flex;
+  flex-basis: 20%;
+  align-items: space;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.header_icons {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.size-logo {
+  size: 100%;
+}
+.size-icon {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+/* FIN HEADER */
+.wall{
+  display: flex;
+}
+.wall img {
+  max-width: 100%; 
+  object-fit: none;
+}
+/* FIN WALL */
+
+.soldes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color-2);
+  color: black;
+  font-weight: bolder;
+  padding: 1% 0%;
+}
+/* FIN DES SOLDES */
+
+.achats {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap; 
+  background-color: white;
+}
+.chaussure {
+  display: flex;
+
+  width: calc(100%/3);
+  
+}
+.chaussure img {
+  width: 100%;
+  filter: grayscale();
+  scale: 0.8;
+
+}
+.achats img:hover {
+  filter: none;
+  scale: 1 ;
+  transition: .6s
+}
+
+/* FIN ACHATS */
+
+
